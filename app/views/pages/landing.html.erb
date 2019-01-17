@@ -1,13 +1,12 @@
-<p id="notice"><%= notice %></p>
 
 <div class="well">
-        <h1 >Students</h1>
+        <h1 >lista de estudiantes</h1>
         <table class="table table-striped table-hover ">
                 <thead>
                     <tr class="active">
                         <th>Name</th>
                         <th >Age</th>
-                        <th colspan="4"> Email</th>
+                        <th colspan="3"> Email</th>
                          
                     </tr>
                
@@ -18,19 +17,11 @@
                       <td><%= student.name %></td>
                    <td><%= student.age %></td> 
                    <td><%= student.email%></td>
-
                    
-                
-                    <td><%= link_to 'Show', student,class:"btn btn-primary" %></td>
-                  <td><%= link_to 'Edit', edit_student_path(student),class:"btn btn-success"%></td>  
-                   <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' },class:"btn btn-danger" %></td> 
-                  </tr>
-                       
-                    <% end %>
+                <% end %>
                 
                 </tbody>
             </table>
-                <%= link_to 'New Student', new_student_path %>  
              
 </div>
  
